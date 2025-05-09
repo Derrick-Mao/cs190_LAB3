@@ -19,3 +19,11 @@ exit
 [2025-05-09 01:56:36] [/workspaces/cs190_LAB3] awk -F'|' '$3 > 10' sales.txt
 [2025-05-09 01:58:02] [/workspaces/cs190_LAB3] awk -F'|' '{print $2, $5}' sales.txt
 [2025-05-09 01:59:40] [/workspaces/cs190_LAB3] awk '{sum += $5} END {print sum}' sales.txt
+[2025-05-09 02:07:23] [/workspaces/cs190_LAB3] awk -F, 'BEGIN {    printf "%-20s %-25s %-30s %-15s\n", "Name", "Title", "Email", "Phone"    printf "%-20s %-25s %-30s %-15s\n", "----", "-----", "-----", "-----"}NR > 1 {    printf "%-20s %-25s %-30s %-15s\n", $1, $2, $3, $4}' contacts.txt
+[2025-05-09 02:07:30] [/workspaces/cs190_LAB3] awk -F, 'BEGIN {
+    printf "%-20s %-25s %-30s %-15s\n", "Name", "Title", "Email", "Phone"
+    printf "%-20s %-25s %-30s %-15s\n", "----", "-----", "-----", "-----"
+}
+NR > 1 {
+    printf "%-20s %-25s %-30s %-15s\n", $1, $2, $3, $4
+}' contacts.txt
