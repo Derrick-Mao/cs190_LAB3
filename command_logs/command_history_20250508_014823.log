@@ -1,0 +1,10 @@
+[2025-05-08 01:48:23] [/workspaces/cs190_LAB3] source .devcontainer/shell.sh
+[2025-05-08 01:49:17] [/workspaces/cs190_LAB3] grep "ERROR" system.log
+[2025-05-08 01:49:34] [/workspaces/cs190_LAB3] grep -i "warning" system.log
+[2025-05-08 01:49:54] [/workspaces/cs190_LAB3] grep -n "INFO" system.log
+[2025-05-08 01:51:58] [/workspaces/cs190_LAB3] grep -c "ERROR" system.log
+[2025-05-08 01:53:25] [/workspaces/cs190_LAB3] ECHO "ERROR: $(grep -c "ERROR" system.log)"; echo "WARNING: $(grep -c "WARNING" system.log)"; echo "INFO: $(grep -c "INFO" system.log)"  
+[2025-05-08 01:53:37] [/workspaces/cs190_LAB3] echo "ERROR: $(grep -c "ERROR" system.log)"; echo "WARNING: $(grep -c "WARNING" system.log)"; echo "INFO: $(grep -c "INFO" system.log)"  
+[2025-05-08 01:54:07] [/workspaces/cs190_LAB3] grep "2025-04-01 1" system.log
+[2025-05-08 01:54:40] [/workspaces/cs190_LAB3] grep "IP" system.log
+[2025-05-08 01:55:33] [/workspaces/cs190_LAB3] grep ".com" contacts.txt
